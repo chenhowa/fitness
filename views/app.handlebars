@@ -1,0 +1,86 @@
+<article>
+	<h1>Howard Chen</h1>
+	<section>
+		<!--Form for adding new exercises-->
+		<form>
+			<fieldset>
+				<legend>Enter a new exercise</legend>
+				<label for="name">Exercise Name:</label>
+				<input type="text" id="name" name="name"><br>
+				
+				<label for="reps">Number of Reps:</label>
+				<input type="text" id="reps" name="reps"><br>
+				
+				<label for="weight">Weight:</label>
+				<input type="text" id="weight" name="weight"><br>
+				
+				<label for="wt_type">Weight Type:</label>
+				<input type="radio" class="wt_type" value="lbs" name="wt_type" checked> lbs
+				<input type="radio" class="wt_type" value="kg" name="wt_type"> kg <br>
+				
+				<label for="date">Date:</label>
+				<input type="date" id="date" name="date">HTML5 input type=date. Very useful.
+				<br><br>
+				
+				<input type="submit" id="submit_exercise" name="submit_exercise" value="Add Exercise">
+			</fieldset>
+
+		</form>
+	</section>
+
+	<section>
+		<table border=1 id="table">
+			<caption>Fitness Tracker</caption>
+			<thead>
+				<th class="hidden">ID</th>
+				<th>Exercise</th>
+				<th>Reps</th>
+				<th>Weight</th>
+				<th>Date</th>
+				<th>lb/kg</th>
+			</thead>
+
+			<tbody id="table_body">
+
+			</tbody>
+		</table>
+	</section>
+	
+	<section class="hidden" id="editForm">
+	
+		<!--Form for editing exercises-->
+		<form>
+			<fieldset>
+				<legend>Edit existing exercise</legend>
+				<input type="hidden" id="ed_id">
+				
+				<legend>Enter new values for exercise</legend>
+				<label for="name">Exercise Name:</label>
+				<input type="text" id="ed_name" name="name"><br>
+				
+				<label for="reps">Number of Reps:</label>
+				<input type="text" id="ed_reps" name="reps"><br>
+				
+				<label for="weight">Weight:</label>
+				<input type="text" id="ed_weight" name="weight"><br>
+				
+				<label for="wt_type">Weight Type:</label>
+				<input type="radio" class="ed_wt_type" value="lbs" name="wt_type" checked> lbs
+				<input type="radio" class="ed_wt_type" value="kg" name="wt_type"> kg <br>
+				
+				<label for="date">Date:</label>
+				<input type="date" id="ed_date" name="date">HTML5 input type=date. Very useful.
+				<br><br>
+				
+				<input type="submit" id="ed_submit_change" name="submit_change" value="Save Change">
+			</fieldset>
+
+		</form>
+	</section>
+	
+	
+	
+<article>
+
+
+{{{script}}}
